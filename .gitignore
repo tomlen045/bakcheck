@@ -1,0 +1,16 @@
+# 备份文件在它眼里也是「目标」，别把演示备份目录提交进仓
+demo-backups/
+*.bak-selftest/
+.bakcheck-selftest/
+
+# 公众号排版草稿是内部文件，不入公开仓（历史教训 b98132d）
+公众号排版版.html
+report.md
+screenshots草稿*
+
+# macOS
+.DS_Store
+__pycache__/
+publish-both.sh
+gitee_public_verify.py
+verify_cdn.py

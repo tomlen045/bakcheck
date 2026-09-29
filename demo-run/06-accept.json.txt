@@ -1,0 +1,78 @@
+$ /Users/len/CodeBuddy/dx/bakcheck/bakcheck.py scan /Users/len/CodeBuddy/dx/bakcheck/demo-backups --json --events /Users/len/CodeBuddy/dx/bakcheck/demo-backups/events.jsonl --no-events
+{
+  "version": "1.0.0",
+  "worst": "RED",
+  "results": [
+    {
+      "family": "configdb-{date}.sql",
+      "count": 1,
+      "latest": "/Users/len/CodeBuddy/dx/bakcheck/demo-backups/configdb/configdb-20260929.sql",
+      "size": 0,
+      "age_hours": 0.0,
+      "level": "RED",
+      "reasons": [
+        "新鲜度OK：最新距今 0分钟",
+        "零字节备份（任务「成功」产物为空）",
+        "历史样本0份（<3），跳过趋势判断——样本不足不外推",
+        "体积OK: 0B",
+        "完整性探针[RED]: 尾部不可读",
+        "完整性探针失败——任务成功但产物损坏"
+      ],
+      "ts": 1790648298.819231,
+      "version": "1.0.0"
+    },
+    {
+      "family": "filesrv-{date}.zip",
+      "count": 1,
+      "latest": "/Users/len/CodeBuddy/dx/bakcheck/demo-backups/filesrv/filesrv-20260921.zip",
+      "size": 4234,
+      "age_hours": 192.0,
+      "level": "RED",
+      "reasons": [
+        "最新备份已 8.0天 未更新（SLA 26小时）",
+        "历史样本0份（<3），跳过趋势判断——样本不足不外推",
+        "体积OK: 4.1KB",
+        "完整性探针[GREEN]: zip全member CRC通过(2个)"
+      ],
+      "ts": 1790648298.819488,
+      "version": "1.0.0"
+    },
+    {
+      "family": "oradb-full-{date}.tar.gz",
+      "count": 5,
+      "latest": "/Users/len/CodeBuddy/dx/bakcheck/demo-backups/oradb/oradb-full-20260929.tar.gz",
+      "size": 2593,
+      "age_hours": 0.0,
+      "level": "RED",
+      "reasons": [
+        "新鲜度OK：最新距今 0分钟",
+        "大小带（中位数5188B历史4份）: 3891~16859",
+        "最新体积骤缩: 2.5KB 低于下界 3891B（断流/截断嫌疑）",
+        "窗口内备份 5 份",
+        "完整性探针[RED]: 流解压失败(截断/损坏): Compressed file ended before the end-of-stream marker was re",
+        "完整性探针失败——任务成功但产物损坏"
+      ],
+      "ts": 1790648298.819668,
+      "version": "1.0.0"
+    },
+    {
+      "family": "webapp-{date}.tar.gz",
+      "count": 7,
+      "latest": "/Users/len/CodeBuddy/dx/bakcheck/demo-backups/webapp/webapp-20260929.tar.gz",
+      "size": 4189,
+      "age_hours": 0.0,
+      "level": "GREEN",
+      "reasons": [
+        "新鲜度OK：最新距今 0分钟",
+        "大小带（中位数4187B历史6份）: 3140~13608",
+        "体积OK: 4.1KB",
+        "窗口内备份 7 份",
+        "完整性探针[GREEN]: tar结构完整(1个member)"
+      ],
+      "ts": 1790648298.8200839,
+      "version": "1.0.0"
+    }
+  ]
+}
+
+[exit 2]

@@ -1,0 +1,15 @@
+$ /Users/len/CodeBuddy/dx/bakcheck/bakcheck.py verdict /Users/len/CodeBuddy/dx/bakcheck/demo-backups/webapp/webapp-20260929.tar.gz --events /Users/len/CodeBuddy/dx/bakcheck/demo-backups/events.jsonl --no-events
+╔════════════════════════════════════════════════════════════╗
+│ 备份恢复演练凭证 RESTORE DRIVEN CERTIFICATE                │
+│ bakcheck v1.0.0 - 2026-09-29 10:18:18 - 随机抽查本档       │
+╠════════════════════════════════════════════════════════════╣
+│ [GREEN] webapp-{date}.tar.gz (1份)                         │
+│   新鲜度OK：最新距今 0分钟                                 │
+│   历史样本0份（<3），跳过趋势判断--样本不足不外推          │
+│   体积OK: 4.1KB                                            │
+│   完整性探针[GREEN]: tar结构完整(1个member)                │
+╠════════════════════════════════════════════════════════════╣
+│ 综合判级: GREEN = 恢复可用                                 │
+│ 证据指纹 sha256[:16]: 6e92eb5682c2d442                     │
+│ 审计档: ~/CodeBuddy/dx/bakcheck/demo-backups/events.jsonl  │
+╚════════════════════════════════════════════════════════════╝

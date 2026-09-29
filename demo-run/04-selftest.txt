@@ -1,0 +1,4 @@
+$ /Users/len/CodeBuddy/dx/bakcheck/bakcheck.py selftest
+✔ 已盖章: app [AMBER] 换盘维护
+selftest: 26/26 绿
+四不变量+偏态分布全部通过。

@@ -1,0 +1,18 @@
+$ /Users/len/CodeBuddy/dx/bakcheck/bakcheck.py verdict /Users/len/CodeBuddy/dx/bakcheck/demo-backups/oradb/oradb-full-20260929.tar.gz --events /Users/len/CodeBuddy/dx/bakcheck/demo-backups/events.jsonl --no-events
+╔════════════════════════════════════════════════════════════╗
+│ 备份恢复演练凭证 RESTORE DRIVEN CERTIFICATE                │
+│ bakcheck v1.0.0 - 2026-09-29 10:18:18 - 随机抽查本档       │
+╠════════════════════════════════════════════════════════════╣
+│ [RED] oradb-full-{date}.tar.gz (1份)                       │
+│   新鲜度OK：最新距今 0分钟                                 │
+│   历史样本0份（<3），跳过趋势判断--样本不足不外推          │
+│   体积OK: 2.5KB                                            │
+│   完整性探针[RED]: 流解压失败(截断/损坏): Compressed file ended before the end-of-stream marker was re │
+│   完整性探针失败--任务成功但产物损坏                       │
+╠════════════════════════════════════════════════════════════╣
+│ 综合判级: RED = 不可恢复风险                               │
+│ 证据指纹 sha256[:16]: 36e98f8aa6c4f931                     │
+│ 审计档: ~/CodeBuddy/dx/bakcheck/demo-backups/events.jsonl  │
+╚════════════════════════════════════════════════════════════╝
+
+[exit 2]

@@ -1,0 +1,5 @@
+$ /Users/len/CodeBuddy/dx/bakcheck/bakcheck.py events --events /Users/len/CodeBuddy/dx/bakcheck/demo-backups/events.jsonl --last 8
+09-29 10:18:18 RED    configdb-{date}.sql    零字节备份（任务「成功」产物为空）
+09-29 10:18:18 RED    filesrv-{date}.zip     最新备份已 8.0天 未更新（SLA 26小时）
+09-29 10:18:18 RED    oradb-full-{date}.tar.gz 最新体积骤缩: 2.5KB 低于下界 3891B（断流/截断嫌疑）
+09-29 10:18:18 GREEN  webapp-{date}.tar.gz   新鲜度OK：最新距今 0分钟
