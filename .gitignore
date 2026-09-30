@@ -14,3 +14,9 @@ __pycache__/
 publish-both.sh
 gitee_public_verify.py
 verify_cdn.py
+_gh_purge.py
+_purge_history.py
+_final_verify.py
+publish-both.sh
+gitee_public_verify.py
+verify_cdn.py
